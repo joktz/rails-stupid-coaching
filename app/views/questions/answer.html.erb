@@ -1,16 +1,18 @@
 
 <body>
-  <h1>Stupid Coaching</h1>
-  <div>
-    <p> <%= @questions %> </p>
-    <p> - You </p>
-  </div>
+  <div class="container">
+    <h1>Stupid Coaching</h1>
+    <div class="border-start border-5 border-start-dark">
+      <p> <%= @questions %> </p>
+      <p class="fst-italic"> - You </p>
+    </div>
 
-  <div>
-    <p> <%= @answer %> </p>
-    <p> - Your coach </p>
-  </div>
-  <div>
-    <%= link_to "Ask another question!", "/ask" %>
+    <div id="coach-answer" class="border-start border-5 border-start-dark">
+      <p> <%= @answer %> </p>
+      <p class="fst-italic"> - Your coach </p>
+    </div>
+    <div>
+      <%= link_to "Ask another question!", "/ask" %>
+    </div>
   </div>
 </body>
